@@ -38,6 +38,11 @@ Elevator Simulator is a simple console game that allows the user to experience t
 4. Run the Script
     * `npm run start`
 
+### Testing
+Basic unit tests were created, but the test suite needs to be expanded. To run the existing tests, after you have run the build command, run:
+
+`npm run test`
+
 ### Troubleshooting
 If there is an error, you can clean the project and uninstall all packages by running `npm run clean`. Then run the build command again to reinstall all required packages.
 

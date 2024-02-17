@@ -1,4 +1,3 @@
-export const travelTimeConst = 10;
 export const colors = {
     reset: "\x1b[0m",
     bright: "\x1b[1m",
@@ -31,4 +30,3 @@ export const colors = {
       crimson: "\x1b[48m"
     }
 };
-

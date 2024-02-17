@@ -1,36 +1,12 @@
 import * as readline from 'readline';
-import { colors, travelTimeConst } from './constants';
 import { readFileSync } from 'fs';
 import { resolve } from 'path';
 
+const travelTimeConst = 10;
 var firstRun: boolean = true;
 var startingFloor: number = 1;
 var currentFloor: number = 1;
 var direction = '';
-
-console.log(`${colors.bg.black}${colors.fg.yellow}` +
-'#######   ###                                  ##                      \n' +
-'##         ##                                  ##                      \n' +
-'##         ##      #####   ### ###   ######  ######    #####   ## ###  \n' +
-'#####      ##     ##   ##   ## ##   ##   ##    ##     ##   ##  ###     \n' +
-'##         ##     #######   ## ##   ##   ##    ##     ##   ##  ##      \n' +
-'##         ##     ##         ###    ##  ###    ##     ##   ##  ##      \n' +
-'#######   ####     #####     ###     ### ##     ###    #####   ##      \n' +
-'                                                                       \n' +
-' #####     ##                                                          \n' +
-'##   ##                                                                \n' +
-'##       ####     ### ##                                               \n' +
-' #####     ##     ## # ##                                              \n' +
-'     ##    ##     ## # ##                                              \n' +
-'##   ##    ##     ## # ##                                              \n' +
-' #####   ######   ##   ##                                              \n' +
-'\n' +
-'Welcome to Elevator Simulator, a new and exciting game.\n' +
-`Hold on to your seat as you experience the thrill of riding an elevator!\n\n`)
-
-printRules('./README.md');
-
-getStartingFloor();
 
 /**
  * Prompts the user for the starting floor for the run. On the first run, the 

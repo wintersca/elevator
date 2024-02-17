@@ -13,14 +13,14 @@
   },
   "homepage": "https://github.com/wintersca/elevator#readme",
   "type": "module",
-  "main": "build/elevator.js",
+  "main": "build/app.js",
   "scripts": {
     "clean-build": "rimraf ./build/*",
     "clean-modules": "rimraf ./node_modules/*",
     "clean": "npm run clean-build && npm run clean-modules",
     "build": "npm install && npm run clean-build && tsc",
     "test": "jest",
-    "start": "node ./build/elevator.js"
+    "start": "node ./build/app.js"
   },
   "devDependencies": {
     "@types/jest": "^29.5.12",
